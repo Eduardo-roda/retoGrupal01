@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+    --very-dark-blue    : hsl(217, 54%, 11%);
+    --very-dark-bluee   : hsl(216, 50%, 16%);
+    --very-dark-blueee  : hsl(215, 32%, 27%);
+    --white             : hsl(0, 0%, 100%);
+
+    --soft-blue         : hsl(215, 51%, 70%);
+    --cyan              : hsl(178, 100%, 50%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    background-color: var(--very-dark-blue);    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.card {
+    background-color: var(--very-dark-bluee);
+    max-width: 375px;
+    padding: 27px;
+    border-radius: 19px;
+    overflow: hidden;
+    box-shadow: 10px 10px 20px var(--very-dark-blueee);
+}
+
+.card_img_wrapper{
+    position: relative;
+}
+
+.card_img {
+    border-radius: 10px;
+    width: 100%;
+    
+}
+.card_color_overlay{
+    position: absolute;
+    background-color: var(--cyan);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    display: none;
+}
+
+.card_view{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.card_img_wrapper:hover{
+    display: block;
+    cursor: pointer;
+}
+
+
+
+
+.card_text_tittle{
+    color: var(--white);
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    font-weight: 600;
+}
+.card_text_tittle:hover{
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.card_text_p{
+    color: var(--soft-blue);
+    font-weight: 300;
+    line-height: 1.8rem;
+    padding-bottom: 1.2rem;
+}
+
+.card_text_esp_{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--very-dark-blueee);
+    padding-bottom: 1.1rem;
+}
+
+.card_text_s{
+    color: var(--cyan);
+}
+
+.card_text_s_{
+    color: var(--soft-blue);
+    font-weight: 300;
+}
+
+.card_footer{
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.card_footer_img{
+    max-width: 100%;
+    width: 40px;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+}
+
+.card_footer_p{
+    padding-left: 1.1rem;
+    color: var(--very-dark-blueee);
+}
+
+.card_footer_p span{
+    color: var(--white);
+    font-weight: 400;
+}
+.card_footer_p span:hover{
+    color: var(--cyan);
+    cursor: pointer;
+}
+
